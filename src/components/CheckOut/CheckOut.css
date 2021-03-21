@@ -1,0 +1,29 @@
+.checkout-page{
+    margin-top: 150px;
+    
+}
+.ride-data{
+    display: flex;
+    margin: 20px 10px;
+    margin-bottom: 40px;
+}
+.ride-data img{
+    width: 250px;
+    height: 210px;
+    margin-right: 20px;
+}
+.ride-info{
+    display: flex;
+}
+.ride-info p{
+    margin: 0 5px;
+}
+.info{
+    height: 130px;
+    margin-left: 20px;
+}
+.google-map{
+    position: absolute;
+    right: 30px;
+    margin-top: 20px;
+}

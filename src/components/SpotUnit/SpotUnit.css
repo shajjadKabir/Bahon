@@ -1,0 +1,9 @@
+.title-design{
+    margin-left: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.spot-div:active{
+    border: 2px solid #FFC107;
+}
