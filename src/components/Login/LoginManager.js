@@ -43,8 +43,11 @@ export const createUserWithEmailAndPassword = (name, email, password) =>{
         updateUserInfo(name);
         return newUser;
     })
-    .catch(error => {
-        console.log(error);
+      .catch(error => {
+        const newUser = {};
+        newUser.message = error.message;
+        return newUser;
+        // console.log(error);
       });
 }
 export const signInWithEmailandPassword = (email, password) =>{

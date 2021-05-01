@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.py-100 {
+  padding: 100px 0;
+}
+.py-150 {
+  padding: 150px 0;
+}

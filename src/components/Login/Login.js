@@ -32,7 +32,7 @@ const Login = () => {
        
         if(newUser){
             
-            if(user.email && user.password === user.confirmPassword){
+            if(user.password === user.confirmPassword){
                 createUserWithEmailAndPassword(`${user.firstname} ${user.lastname}`, user.email, user.password)
                 .then(res =>{
                     const newUser = {
@@ -41,10 +41,12 @@ const Login = () => {
                         email: '',
                         password: '',
                         confirmPassword: '',
-                        message: ''
+                        // message: ''
                     }
-                    newUser.message = res.message;
+                    // newUser.message = res.message;
+                    console.log(res)
                     setUser(newUser);
+                    
                 })
             }
             else{
@@ -92,7 +94,7 @@ const Login = () => {
               setError('');
           }
           else{
-            setError('Password is wrong. Please fill up with minimum 7 alphabates with minimun one number')
+            setError('Password is wrong. Please fill up with minimum 7 word with minimum one number')
           }
         }
         if(isValid){
